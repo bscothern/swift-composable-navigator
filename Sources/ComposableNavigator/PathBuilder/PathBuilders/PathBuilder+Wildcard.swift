@@ -12,7 +12,7 @@ public extension PathBuilders {
 
     public var body: some View {
       content
-        .uiKitOnAppear {
+        .nativeOnAppear {
           navigator.replaceContent(of: id, with: wildcard)
         }
     }

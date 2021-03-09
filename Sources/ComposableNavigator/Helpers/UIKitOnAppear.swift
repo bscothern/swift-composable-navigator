@@ -1,3 +1,4 @@
+#if canImport(UIKIt)
 import UIKit
 import SwiftUI
 
@@ -29,3 +30,4 @@ extension View {
     self.background(UIKitAppear(action: perform))
   }
 }
+#endif

@@ -76,7 +76,6 @@ public struct Root<Builder: PathBuilder>: View {
         navigator
       )
       .environmentObject(dataSource)
-      .navigationViewStyle(StackNavigationViewStyle())
     }
   }
 }

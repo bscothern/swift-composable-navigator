@@ -49,7 +49,7 @@ public struct NavigationNode<Content: View, Successor: View>: View {
           label: { EmptyView() }
         )
       )
-      .uiKitOnAppear {
+      .nativeOnAppear {
         if let screen = self.screen {
           self.onAppear(!screen.hasAppeared)
 
@@ -146,7 +146,7 @@ public struct NavigationNode<Content: View, Successor: View>: View {
       content
     case .sheet(allowsPush: true):
       NavigationView { content }
-        .navigationViewStyle(StackNavigationViewStyle())
+//        .navigationViewStyle(StackNavigationViewStyle())
     }
   }
 }
